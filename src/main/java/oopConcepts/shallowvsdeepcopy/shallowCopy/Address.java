@@ -1,4 +1,4 @@
-package oopConcepts.shallowCopy;
+package oopConcepts.shallowvsdeepcopy.shallowCopy;
 
 public class Address {
     String city;

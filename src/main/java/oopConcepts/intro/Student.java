@@ -9,8 +9,58 @@ package oopConcepts.intro;
 // Principle : Abstraction
 // Pillars: encapsulation, polymorphisms, inheritance
 // Encapsulation is implemented by class using access modifiers
+//eg
+public class Student {
+   private String name;
+   private int age;
+   private String gender;
 
-public class intro {
+   public Student(){};
 
+   public Student(String name, int age, String gender){
+       this.age = age;
+       this.name = name;
+       this.gender = gender;
+   }
 
+   public Student(String name, int age){
+       this.name = name;
+       this.age = age;
+   }
+
+   public String getName(){
+       return name;
+   }
+
+   public void setName(String name){
+       this.name = name;
+   }
+
+   public int getAge(){
+       return age;
+   }
+
+   public void setAge(int age){
+       this.age = age;
+   }
+
+   public String getGender(){
+       return gender;
+   }
+
+   public void setGender(String gender){
+       this.gender = gender;
+   }
+
+   public void printStudent(){
+       System.out.println(this.name);
+       System.out.println(this.age);
+       System.out.println(this.gender);
+   }
+
+   public Student(Student old){
+       this.name = old.name;
+       this.age = old.age;;
+       this.gender=old.gender;
+   }
 }

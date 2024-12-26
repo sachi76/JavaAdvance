@@ -1,4 +1,8 @@
 package oopConcepts.MultiThreading.waysToCreateThread.UsingRunnable;
 
-public class SimpleRunnable {
+public class SimpleRunnable implements Runnable{
+    @Override
+    public void run() {
+
+    }
 }

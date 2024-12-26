@@ -1,4 +1,4 @@
-package oopConcepts.shallowCopy;
+package oopConcepts.shallowvsdeepcopy.shallowCopy;
 
 public class Person {
     String name;
@@ -9,12 +9,12 @@ public class Person {
         this.address = address;
     }
 
-    public Person shallowCopy(){
-        return new Person(this.name, this.address);
-    }
-
     public Person(Person old){
         this.name = old.name;
         this.address = old.address;
+    }
+
+    public Person shallowCopy(){
+        return new Person(this.name, this.address);
     }
 }

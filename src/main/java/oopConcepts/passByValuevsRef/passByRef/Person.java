@@ -1,5 +1,8 @@
 package oopConcepts.passByValuevsRef.passByRef;
 
-public class PassByRef {
-
+public class Person {
+    String name;
+    Person(String name){
+        this.name = name;
+    }
 }
